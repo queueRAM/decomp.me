@@ -154,6 +154,7 @@ let app = {
         NEXT_PUBLIC_COMMIT_HASH: process.env.GIT_HASH ?? "abc123",
         OBJDIFF_BASE: process.env.OBJDIFF_BASE,
     },
+    allowedDevOrigins: ['10.0.4.183','10.0.4.22','[::1]'],
 };
 
 if (process.env.ANALYZE === "true") {

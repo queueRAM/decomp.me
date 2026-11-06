@@ -929,6 +929,55 @@ IDO53_CFRONT = IDOCompiler(
     language=flags.Language.OLD_CXX,
 )
 
+IDO53_MIPSPRO601 = IDOCompiler(
+    id="ido5.3_mipspro6.0.1",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO602 = IDOCompiler(
+    id="ido5.3_mipspro6.0.2",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO61 = IDOCompiler(
+    id="ido5.3_mipspro6.1",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO62 = IDOCompiler(
+    id="ido5.3_mipspro6.2",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO71 = IDOCompiler(
+    id="ido5.3_mipspro7.1",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO71A = IDOCompiler(
+    id="ido5.3_mipspro7.1a",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
+IDO53_MIPSPRO72 = IDOCompiler(
+    id="ido5.3_mipspro7.2",
+    platform=N64,
+    cc='PATH=""${COMPILER_DIR}"/usr/bin" "${COMPILER_DIR}"/usr/bin/qemu-irix -silent -L "${COMPILER_DIR}" "${COMPILER_DIR}/usr/bin/NCC" -I "{COMPILER_DIR}"/usr/include -c -Xcpluscomm -G0 -non_shared -woff 649,838,712 -32 ${COMPILER_FLAGS} -o "${OUTPUT}" "${INPUT}"',
+    language=flags.Language.OLD_CXX,
+)
+
 IDO71 = IDOCompiler(
     id="ido7.1",
     platform=N64,
@@ -1889,6 +1938,13 @@ _all_compilers: list[Compiler] = [
     IDO52,
     IDO53,
     IDO53_CFRONT,
+    IDO53_MIPSPRO601,
+    IDO53_MIPSPRO602,
+    IDO53_MIPSPRO61,
+    IDO53_MIPSPRO62,
+    IDO53_MIPSPRO71,
+    IDO53_MIPSPRO71A,
+    IDO53_MIPSPRO72,
     IDO60,
     IDO71,
     IDO71_IRIX4,
